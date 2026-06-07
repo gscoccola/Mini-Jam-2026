@@ -6,9 +6,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
     [SerializeField] private float _moveForce = 5f;
     [SerializeField] private float _ejectForce = 5f;
 
-
+    private PlayerAnimator _animator;
     private CircleCollider2D _collider;
-    private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rb;
 
     private PlayerControls _controls;
@@ -24,11 +23,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
     [SerializeField] private ParticleSystem _deathParticleSystem;
     private ParticleSystem.EmissionModule _deathEmission;
 
-    public float FluidReserve = 100f;
+    [ReadOnly] public float FluidReserve = 100f;
     private float _initialSize;
     private float _initialMass;
 
     private bool _isDead;
+    private float[] _radiusLevels = { 0.26f, 0.35f, 0.56f };
 
     #region Setup
     protected override void Awake()
@@ -36,8 +36,8 @@ public class PlayerMovement : Singleton<PlayerMovement>
         base.Awake();
 
         //References
+        _animator = GetComponent<PlayerAnimator>();
         _collider = GetComponent<CircleCollider2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _rb = GetComponent<Rigidbody2D>();
         _camera = Camera.main;
         _ejectEmission = _ejectParticleSystem.GetComponent<ParticleSystem>().emission;
@@ -59,12 +59,12 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void OnEnable()
     {
-        _controls.Enable(); // Must explicitly enable the action map
+        _controls.Enable();
     }
 
     private void OnDisable()
     {
-        _controls.Disable(); // Clean up to avoid memory leaks
+        _controls.Disable();
     }
 
     #endregion
@@ -76,7 +76,7 @@ public class PlayerMovement : Singleton<PlayerMovement>
         // Horizontal Movement
         _moveInput = _controls.Player.Move.ReadValue<Vector2>();
         Vector3 movement = new Vector3(_moveInput.x, 0f, 0f) ;
-        _rb.AddForce(movement.normalized * _moveForce * Time.deltaTime, ForceMode2D.Force);
+        if (IsOnFloor()) _rb.AddForce(movement.normalized * _moveForce * Time.deltaTime, ForceMode2D.Force);
 
         // Eject Aming
         _mouseDirection = _camera.ScreenToWorldPoint(Mouse.current.position.ReadValue()) - transform.position;
@@ -89,14 +89,22 @@ public class PlayerMovement : Singleton<PlayerMovement>
             TryEject(_mouseDirection);
         }
         else _ejectEmission.enabled = false;
+
+        // Animation
+        if (_ejectEmission.enabled) _animator.SetFaceAnimation(PlayerFaceState.Shooting);
+        else if (movement.magnitude > 0.1f && IsOnFloor()) _animator.SetFaceAnimation(PlayerFaceState.Walking);
+        else if (!IsOnFloor()) _animator.SetFaceAnimation(PlayerFaceState.Holding);
+        else _animator.SetFaceAnimation(PlayerFaceState.Idle);
+
+
     }
 
     private void TryJump()
     {
-        if (IsOnFloor())
+        /*if (IsOnFloor())
         {
             _rb.AddForce(Vector2.up * 5f, ForceMode2D.Impulse);
-        }
+        }*/
     }
 
     private bool IsOnFloor()
@@ -106,38 +114,54 @@ public class PlayerMovement : Singleton<PlayerMovement>
 
     private void TryEject(Vector2 direction)
     {
-        if (FluidReserve >= 0f)
+        if (FluidReserve >= 25f)
         {
             FluidReserve -= 10f * Time.deltaTime;
             _rb.AddForce(-direction * _ejectForce * Time.deltaTime, ForceMode2D.Force);
             SetSize(FluidReserve / 100f);
             _ejectEmission.enabled = true;
         }
-        else _ejectEmission.enabled = false;
+        else
+        {
+            InGameUI.Instance.TriggerGameOver();
+        }      
     }
 
     private void SetSize(float relativeSize)
     {
-        _rb.mass = _initialMass * relativeSize; // Adjust mass based on size
-        _collider.radius = _initialSize * relativeSize;
-        _spriteRenderer.transform.localScale = Vector3.one * relativeSize;
+        int sizeLevel = GetSizeLevel(relativeSize);
+        float rest = ( 1f + (relativeSize - (sizeLevel + 1) *0.25f) * 4f) *0.5f;
+
+        _rb.mass = _initialMass * relativeSize;
+        _collider.radius = _radiusLevels[sizeLevel];
+        _animator.SetBodyAnimation(sizeLevel, rest);
+    }
+
+    private int GetSizeLevel(float relativeSize)
+    {
+        if (relativeSize > 0.75f) return 2;
+        else if (relativeSize > 0.5f) return 1;
+        else return 0;
     }
 
     public void RefillFluid(float amount)
     {
+        SFXManager.Instance.PlaySFX(SFXManager.Instance.PlayerAbsorb, true);
         FluidReserve = Mathf.Clamp(FluidReserve + amount, 0f, 100f);
         SetSize(FluidReserve / 100f);
     }
 
 
-    public void Die()
+    public void Die(bool explode = true)
     {
-        Debug.Log("Player Died");
         _isDead = true;
         _ejectEmission.enabled = false;
-        _deathParticleSystem.Play();
-        _deathEmission.rateOverTime = FluidReserve * 100f;
-        _spriteRenderer.enabled = false;
+        if (explode)
+        {
+            _deathEmission.rateOverTime = FluidReserve * 100f;
+            _deathParticleSystem.Play();
+        }
         _rb.bodyType = RigidbodyType2D.Static;
+        _animator.Die();
     }
 }

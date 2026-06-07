@@ -4,12 +4,12 @@ public class Refill : MonoBehaviour
 {
     private bool _isConsumed = false;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (_isConsumed) return;
-        if (collision.collider.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            collision.collider.GetComponent<PlayerMovement>().RefillFluid(50f);
+            collision.GetComponent<PlayerMovement>().RefillFluid(50f);
             _isConsumed = true;
             Destroy(gameObject);
         }

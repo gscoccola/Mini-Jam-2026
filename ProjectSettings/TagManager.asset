@@ -14,7 +14,7 @@ TagManager:
   - Floor
   - Enemy
   - Tool
-  - 
+  - Refill
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Particles
     uniqueID: 729973147
+    locked: 0
+  - name: Player
+    uniqueID: 3431334617
     locked: 0
   m_RenderingLayers:
   - Default

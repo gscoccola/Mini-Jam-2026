@@ -55,12 +55,12 @@ public class InGameUI : Singleton<InGameUI>
 
     #region GameOver
 
-    public void TriggerGameOver()
+    public void TriggerGameOver(bool explode = true)
     {
         if (IsGameOver ) return;
-        PlayerMovement.Instance.Die();
+        PlayerMovement.Instance.Die(explode);
         IsGameOver = true;
-        DOVirtual.Float(0f, 1f, 3f, value =>{}).OnComplete(() =>
+        DOVirtual.Float(0f, 1f, 1.8f, value => { }).OnComplete(() =>
         {
             Time.timeScale = 0f;
             _gameOverMenu.SetActive(true);

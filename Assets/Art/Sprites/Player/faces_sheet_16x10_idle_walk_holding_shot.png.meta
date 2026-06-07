@@ -1,0 +1,552 @@
+fileFormatVersion: 2
+guid: 9fca0e6cae176fe45be97ddd34e4f79f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2610056080460538071
+    second: faces_sheet_16x10_idle_walk_holding_shot_0
+  - first:
+      213: -8556217125376317959
+    second: faces_sheet_16x10_idle_walk_holding_shot_1
+  - first:
+      213: 5217258181436879211
+    second: faces_sheet_16x10_idle_walk_holding_shot_2
+  - first:
+      213: -8103649994799000223
+    second: faces_sheet_16x10_idle_walk_holding_shot_3
+  - first:
+      213: -4348243127850388420
+    second: faces_sheet_16x10_idle_walk_holding_shot_4
+  - first:
+      213: -7873062822670953134
+    second: faces_sheet_16x10_idle_walk_holding_shot_5
+  - first:
+      213: -4662987833690875360
+    second: faces_sheet_16x10_idle_walk_holding_shot_6
+  - first:
+      213: 7556544137915117820
+    second: faces_sheet_16x10_idle_walk_holding_shot_7
+  - first:
+      213: -2940743838542015459
+    second: faces_sheet_16x10_idle_walk_holding_shot_8
+  - first:
+      213: -9157321974991784362
+    second: faces_sheet_16x10_idle_walk_holding_shot_9
+  - first:
+      213: 191923673620519903
+    second: faces_sheet_16x10_idle_walk_holding_shot_10
+  - first:
+      213: -6356705017475520759
+    second: faces_sheet_16x10_idle_walk_holding_shot_11
+  - first:
+      213: 1594903204009855953
+    second: faces_sheet_16x10_idle_walk_holding_shot_12
+  - first:
+      213: -3974519329716055827
+    second: faces_sheet_16x10_idle_walk_holding_shot_13
+  - first:
+      213: -6683904660884501160
+    second: faces_sheet_16x10_idle_walk_holding_shot_14
+  - first:
+      213: -4280308452324703717
+    second: faces_sheet_16x10_idle_walk_holding_shot_15
+  - first:
+      213: 5812022744119439417
+    second: faces_sheet_16x10_idle_walk_holding_shot_16
+  - first:
+      213: 9122848376082794212
+    second: faces_sheet_16x10_idle_walk_holding_shot_17
+  - first:
+      213: -4030040454862316572
+    second: faces_sheet_16x10_idle_walk_holding_shot_18
+  - first:
+      213: -9171230840974900580
+    second: faces_sheet_16x10_idle_walk_holding_shot_19
+  - first:
+      213: 7082547765130963712
+    second: faces_sheet_16x10_idle_walk_holding_shot_20
+  - first:
+      213: -8087316240748908134
+    second: faces_sheet_16x10_idle_walk_holding_shot_21
+  - first:
+      213: -5663188944486559669
+    second: faces_sheet_16x10_idle_walk_holding_shot_22
+  - first:
+      213: -2316197324072418343
+    second: faces_sheet_16x10_idle_walk_holding_shot_23
+  - first:
+      213: 5229207688976842626
+    second: faces_sheet_16x10_idle_walk_holding_shot_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f1d40d2d737cbd0800000000000000
+      internalID: -2610056080460538071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 30
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5a4d47bd5324980800000000000000
+      internalID: -8556217125376317959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 20
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b61bb0e7cac676840800000000000000
+      internalID: 5217258181436879211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 165d8e3c34d0a8f80800000000000000
+      internalID: -8103649994799000223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34b177c9efe7a3c0800000000000000
+      internalID: -4348243127850388420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2551d5873134db290800000000000000
+      internalID: -7873062822670953134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a13e4554db94fb0800000000000000
+      internalID: -4662987833690875360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_7
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0bdfd6bdc3ed860800000000000000
+      internalID: 7556544137915117820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14d8404f016037d0800000000000000
+      internalID: -2940743838542015459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6567cba6e28aae080800000000000000
+      internalID: -9157321974991784362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb93267099d9a200800000000000000
+      internalID: 191923673620519903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_11
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907ad63477278c7a0800000000000000
+      internalID: -6356705017475520759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbc32e830c322610800000000000000
+      internalID: 1594903204009855953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0d95f3abba7d8c0800000000000000
+      internalID: -3974519329716055827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: faces_sheet_16x10_idle_walk_holding_shot_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3986a1c955c4869428f53344f3a521fd
+      internalID: -6683904660884501160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 949c8be38724aac45ac9fe0ddb6ea984
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":11.0,"y":4.0},"gridSpriteSize":{"x":16.0,"y":10.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      faces_sheet_16x10_idle_walk_holding_shot_0: -2610056080460538071
+      faces_sheet_16x10_idle_walk_holding_shot_1: -8556217125376317959
+      faces_sheet_16x10_idle_walk_holding_shot_10: 191923673620519903
+      faces_sheet_16x10_idle_walk_holding_shot_11: -6356705017475520759
+      faces_sheet_16x10_idle_walk_holding_shot_12: 1594903204009855953
+      faces_sheet_16x10_idle_walk_holding_shot_13: -3974519329716055827
+      faces_sheet_16x10_idle_walk_holding_shot_14: -6683904660884501160
+      faces_sheet_16x10_idle_walk_holding_shot_2: 5217258181436879211
+      faces_sheet_16x10_idle_walk_holding_shot_3: -8103649994799000223
+      faces_sheet_16x10_idle_walk_holding_shot_4: -4348243127850388420
+      faces_sheet_16x10_idle_walk_holding_shot_5: -7873062822670953134
+      faces_sheet_16x10_idle_walk_holding_shot_6: -4662987833690875360
+      faces_sheet_16x10_idle_walk_holding_shot_7: 7556544137915117820
+      faces_sheet_16x10_idle_walk_holding_shot_8: -2940743838542015459
+      faces_sheet_16x10_idle_walk_holding_shot_9: -9157321974991784362
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
